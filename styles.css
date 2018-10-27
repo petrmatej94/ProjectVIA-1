@@ -11,6 +11,10 @@
     background-color: #202020;
 }
 
+.my-bottom-row p, h3 {
+    color: darkgray;
+}
+
 .my-footer {
     background-color: #101010;
 }
@@ -68,3 +72,12 @@ img {
     color: white;
     font-size: 20px;
 }
+
+.post-body ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: gray;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
