@@ -1,251 +1,270 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <script src="main.js"></script>
-
-    <title>Title</title>
+    <title>Hello, world!</title>
 </head>
 
 
 <body>
-<div class="container col-md-9">
+<div class="container main-container">
 
-    <div class="row header" id="nav">
-        <div class="col-md-4">
-            <img src="images/logo.PNG">
-        </div>
-
-        <div class="col-md-8 navbar">
-            <ul>
-                <li>Home</li>
-                <li>Features</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <li>Purchase</li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="row intro-box">
-        <h1>Amazing things that</h1>
-        <p>bring positive result</p>
-    </div>
-
-
-    <div class="row body-main">
-
-        <!--Main body with posts-->
-        <div class="col-md-9 posts-body">
-
-            <div class="post-body">
-                <h1>Post title</h1>
-                <ul>
-                    <li>Date</li>
-                    <li>Author</li>
-                    <li>Tags</li>
-                    <li>Comments</li>
+    <nav class="nav-scroller navbar-toggleable navbar-light px-5 py-3">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">MY BRAND</a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Product 1</a>
+                            <a class="dropdown-item" href="#">Product 2</a>
+                            <a class="dropdown-item" href="#">Product 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Purchase</a>
+                    </li>
                 </ul>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
-                        Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
-                </div>
+
             </div>
-
-
         </div>
-
-        <!--Box on the right side with widgets-->
-        <div class="col-md-3 right-box">
-            <div class="search-field">
-                <input type="text" placeholder="Search..">
-            </div>
+    </nav>
 
 
-            <div class="blog-categories">
-                <h4>Blog Categories</h4>
-                <ul>
-                    <li><a href="">Branding</a></li>
-                    <li><a href="">Design Best Practsice</a></li>
-                    <li><a href="">Performance</a></li>
-                    <li><a href="">Responsive design</a></li>
-                    <li><a href="">Typography</a></li>
-                    <li><a href="">User Experience</a></li>
-                </ul>
-            </div>
-
-            <div class="text-widget">
-                <h4>Text Widget</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
-                    Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
-            </div>
-
-            <div class="recent-posts">
-                <h4>Recent posts</h4>
-                <p>3 posts will be there</p>
-            </div>
-
-            <div class="tabs">
-                <h4>Tabs Widget</h4>
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Recent</a></li>
-                    <li><a href="">Popular</a></li>
-                </ul>
-            </div>
-
-            <div class="accordion-widget">
-                <h4>Accordion Widget</h4>
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                    Website Design</a>
-                            </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse in">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                    Website Development</a>
-                            </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                    Content Management Systems</a>
-                            </h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                    E-Commerce</a>
-                            </h4>
-                        </div>
-                        <div id="collapse4" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="latest-tweets">
-                <h4>Recent posts</h4>
-            </div>
-
-            <div class="flick-feed">
-                <h4>Flicker Feed</h4>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!--Div with company info at the bottom of the page-->
-    <div class="row my-bottom-row">
-        <div class="col-md-3">
-            <h3>Company name</h3>
-            <p>Our company bla blaOur company bla blaOur company bla blaOur company bla blaOur company bla blaOur company bla blaOur company bla bla</p>
-        </div>
-
-        <div class="col-md-3">
-            <h3>Latest Tweets</h3>
-        </div>
-
-        <div class="col-md-3">
-            <h3>Recent Posts</h3>
-            <!--<div class="row">-->
-            <!--<h3>Text</h3>-->
-            <!--<p>text</p>-->
-            <!--</div>-->
-        </div>
-
-        <div class="col-md-3">
-            <h3>Photo Stream</h3>
+    <header id="home-section">
+        <div class="container home-inner px-5">
             <div class="row">
-                <p>photo stream shits</p>
+                <div class="col-md-7">
+                    <h1 class="display-4 font-weight-bold pt-5">We believe in quality design</h1>
+                    <h4 class="text-white font-weight-normal pt-2">Any creative project is unique and should be provided with the appropriate quality</h4>
+                    <button type="button" class="btn btn-secondary mt-3">Purchase Now</button>
+                </div>
             </div>
         </div>
+    </header>
+
+
+    <div class="marketing mx-5">
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <i class="fab fa-gg-circle fa-3x"></i>
+                    </div>
+                    <div class="col-md-10 mt-3">
+                        <h6 class="">Responsive Design</h6>
+                    </div>
+                </div>
+                <p class="text-muted font-weight-light text-justify">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <i class="fab fa-gg-circle fa-3x"></i>
+                    </div>
+                    <div class="col-md-10 mt-3">
+                        <h6 class="">Revolution Slider</h6>
+                    </div>
+                </div>
+                <p class="text-muted font-weight-light text-justify">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <i class="fab fa-gg-circle fa-3x"></i>
+                    </div>
+                    <div class="col-md-10 mt-3">
+                        <h6>Wide Range of Colors</h6>
+                    </div>
+                </div>
+                <p class="text-muted font-weight-light text-justify">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+        </div>
+
+
+
+        <div class="card-deck mb-20 text-center four-images">
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <a href="#"><img class="card-img-top" src="images/city.png"></a>
+                </div>
+            </div>
+
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <a href="#"><img src="images/lion.jpg"></a>
+                </div>
+            </div>
+
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <a href="#"><img src="images/rose.jpg"></a>
+                </div>
+            </div>
+
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <a href="#"><img src="images/guitar.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck mb-20 text-center company-references">
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <img src="images/katedra.PNG">
+                </div>
+            </div>
+
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <img src="images/katedra.PNG">
+                </div>
+            </div>
+
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <img src="images/katedra.PNG">
+                </div>
+            </div>
+
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <img src="images/katedra.PNG">
+                </div>
+            </div>
+
+            <div class="card mb-4 mr-1 bg-primary">
+                <div class="card-body">
+                    <img src="images/katedra.PNG">
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <!--Footer div-->
-    <div class="row my-footer">
-        <div class="col-md-2">
-            <p>Footer</p>
-        </div>
-        <div class="col-md-2">
-            <p>Legal Notice</p>
-        </div>
-        <div class="col-md-3">
-            <p>Terms & Conditions</p>
-        </div>
+    <footer class="border-top">
+        <div class="first-footer mt-5 p-5 ">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <h5 class="text-muted" >Brand</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pellentesque quam vel velit. Mauris metus. Pellentesque sapien.
+                        Praesent in mauris eu tortor porttitor accumsan.</p>
+                </div>
 
-        <div class="col-md-5">
-            <p>Ikony</p>
+                <div class="col-6 col-md">
+                    <h5 class="text-muted" >Latest tweets</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="" href="#">Some tweet</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <h5 class="text-muted" >Recent Posts</h5>
+                    <ul class="list-unstyled text-small">
+                        <li>
+                            <a href="#"><h6>Resource</h6></a>
+                            <p class="">Some random texSome random texSome random text</p>
+                        </li>
+                        <li>
+                            <a href="#"><h6>Resource</h6></a>
+                            <p>Some random texSome random texSome random text</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <h5 class="text-muted" >Photo Stream</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="" href="#">Team</a></li>
+                        <li><a class="" href="#">Locations</a></li>
+                        <li><a class="" href="#">Privacy</a></li>
+                        <li><a class="" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 
 
+    <footer>
+        <div class="second-footer">
+            <div class="container">
+                <div class="row py-3 px-5 d-flex align-items-center">
+
+                    <div class="col-md-2 col-lg-2 mt-2">
+                        <h6 class="">Student Project</h6>
+                    </div>
+                    <div class="col-md-2 col-lg-2 mt-2">
+                        <h6>Legal Notice</h6>
+                    </div>
+                    <div class="col-md-2 col-lg-6 mt-2">
+                        <h6 class="">Terms & Conditions</h6>
+                    </div>
+
+                    <div class="col-md-6 col-lg-2">
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook mr-2"> </i>
+                        </a>
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter mr-2"> </i>
+                        </a>
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus mr-2"> </i>
+                        </a>
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin mr-2"> </i>
+                        </a>
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 
 
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 </body>
-
-<!--<script type="text/javascript">-->
-<!--var nav = document.getElementById('nav');-->
-
-<!--window.onscroll = function () {-->
-<!--if(window.pageYOffset > 50) {-->
-<!--nav.style.background = "#ffbf00";-->
-<!--nav.style.position = "fixed";-->
-<!--}-->
-<!--else {-->
-<!--nav.style.background = "transparent";-->
-<!--nav.style.position = "unset";-->
-<!--}-->
-<!--};-->
-<!--</script>-->
 </html>
+
+
+
+
+
+
