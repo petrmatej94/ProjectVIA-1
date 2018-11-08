@@ -23,24 +23,24 @@
             <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="index.html" class="navbar-brand">YOUR TRAVEL AGENCY</a>
+            <a href="index.html" class="navbar-brand">TRAVEL AGENCY</a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Holiday Packs</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">Product 1</a>
-                            <a class="dropdown-item" href="#">Product 2</a>
-                            <a class="dropdown-item" href="#">Product 3</a>
+                            <a class="dropdown-item" href="#">Holiday pack 1</a>
+                            <a class="dropdown-item" href="#">Holiday pack 2</a>
+                            <a class="dropdown-item" href="#">Holiday pack 3</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -57,11 +57,11 @@
 
 
     <header id="home-section">
-        <div class="container home-inner">
+        <div class="container home-inner p-5">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-4 font-weight-bold">Above all, we believe</h1>
-                    <h2 class="text-white font-weight-normal">in quality design</h2>
+                    <h1 class="display-4 font-weight-bold">Articles written by</h1>
+                    <h2 class="text-white font-weight-normal">our customers</h2>
                 </div>
             </div>
         </div>
@@ -69,27 +69,179 @@
 
 
 
-    <div class="gallery">
-        <div id="big">
-            <img src="images/sunset.jpg">
-        </div>
 
-        <div class="row">
-            <div class="mx-auto">
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-primary mx-2" id="my-button-prev">Previous Image</button>
-                    <button type="button" class="btn btn-primary mx-2" id="my-button-next">Next Image</button>
+    <div class="row body-main">
+
+        <!--Main body with posts-->
+        <div class="col-md-9 posts-body">
+
+            <div class="post-body">
+                <h3>Post title</h3>
+                <ul>
+                    <li>Date: 1.11.2018</li>
+                    <li>Author: Petr Matej</li>
+                    <li>Tags: #Tag, #Tag2</li>
+                    <li>Comments: 10</li>
+                </ul>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
+                        Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
+                </div>
+            </div>
+
+            <div class="post-body">
+                <h3>Post title</h3>
+                <ul>
+                    <li>Date: 1.11.2018</li>
+                    <li>Author: Petr Matej</li>
+                    <li>Tags: #Tag, #Tag2</li>
+                    <li>Comments: 10</li>
+                </ul>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
+                        Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
+                </div>
+            </div>
+
+            <div class="post-body">
+                <h3>Post title</h3>
+                <ul>
+                    <li>Date: 1.11.2018</li>
+                    <li>Author: Petr Matej</li>
+                    <li>Tags: #Tag, #Tag2</li>
+                    <li>Comments: 10</li>
+                </ul>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
+                        Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
                 </div>
             </div>
         </div>
-        <div id="sub">
-            <img src="images/field.jpg">
-            <img src="images/eiffel.jpg">
-            <img src="images/house.jpg">
-            <img src="images/wave.jpg">
-            <img src="images/sunset2.jpg">
+
+        <!--Box on the right side with widgets-->
+        <div class="col-md-3 right-box">
+            <div class="search-field">
+                <input type="text" placeholder="Search..">
+                <button>Search</button>
+            </div>
+
+            <div class="blog-categories">
+                <h4>Blog Categories</h4>
+                <ul>
+                    <li><a href="">Branding</a></li>
+                    <li><a href="">Design Best Practsice</a></li>
+                    <li><a href="">Performance</a></li>
+                    <li><a href="">Responsive design</a></li>
+                    <li><a href="">Typography</a></li>
+                    <li><a href="">User Experience</a></li>
+                </ul>
+            </div>
+
+            <div class="text-widget">
+                <h4>Text Widget</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
+                    Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
+            </div>
+
+            <div class="recent-posts">
+                <h4>Recent posts</h4>
+                <p>3 posts will be there</p>
+            </div>
+
+            <div class="tabs">
+                <h4>Tabs Widget</h4>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">Recent</a></li>
+                    <li><a href="">Popular</a></li>
+                </ul>
+            </div>
+
+            <div class="accordion-widget">
+                <h4>Accordion Widget</h4>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    Website Design</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                    Website Development</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                    Content Management Systems</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                    E-Commerce</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-tweets">
+                <h4>Recent posts</h4>
+            </div>
+
+            <div class="flick-feed">
+                <h4>Flicker Feed</h4>
+            </div>
+
         </div>
     </div>
+
+
 
 
 
@@ -198,7 +350,7 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 
 </body>
 </html>
