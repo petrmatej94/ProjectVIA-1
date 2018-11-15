@@ -1,6 +1,10 @@
 
 body {
-    background: #7fb0ff;
+    background: url("images/sea2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .main-container{
@@ -13,6 +17,7 @@ body {
 
 .home-inner {
     background-color: #FFBF00;
+    /*background-color: #FFD700;*/
     padding: 50px -50px 50px 50px;
 }
 
