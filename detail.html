@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" type="text/css" href="styles/gallery_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/posts_styles.css">
 
-    <title>Contact Us</title>
+    <script type="text/javascript" src="scripts/blogs.js"></script>
+
+    <title id="post-main-title"></title>
 </head>
 
 
@@ -59,13 +62,10 @@
 
 
     <header id="home-section">
-        <div class="container home-inner p-5">
+        <div class="container home-inner px-5 pt-3 pb-2">
             <div class="row">
                 <div class="col-md-9">
-                    <h1 class="display-4 font-weight-bold">Get in touch with us</h1>
-                </div>
-                <div class="col-md-3">
-                    <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#ModalLoginForm"><strong>Contact Form</strong></button>
+                    <h1 class="navbar-brand" id="blog-title">Blog Title</h1>
                 </div>
             </div>
         </div>
@@ -73,77 +73,30 @@
 
 
 
-    <div id="ModalLoginForm" class="modal fade">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title">Contact Form</h1>
+
+    <div class="row body-main">
+
+        <div class="posts-body" id="posts-body">
+
+            <div class="post-body">
+                <ul class="text-muted mt-2">
+                    <li id="post-date"><i class="fa fa-clock prefix grey-text mr-2"></i>Dummy</li>
+                    <li id="post-author"><i class="fa fa-user prefix grey-text mr-2"></i>Dummy</li>
+                    <li id="post-tags"><i class="fa fa-tag prefix grey-text mr-2"></i>Dummy</li>
+                    <li id="post-comments"><i class="fa fa-pen prefix grey-text mr-2"></i>Dummy</li>
+                </ul>
+                <div class="mb-3">
+                    <img  id="post-image" src="images/sea.jpg" class="img-fluid">
                 </div>
-                <div class="modal-body">
-                    <form role="form" method="POST" action="">
-                        <input type="hidden" name="_token" value="">
 
-                        <div class="form-group">
-                            <label class="control-label">Your Name</label>
-                            <div>
-                                <input type="text" class="form-control input-lg" value="" placeholder="Enter your name" required>
-                            </div>
-                        </div>
+            <div class="description mb-2">
+            <p id="post-body" class="">Dummy</p>
+            </div>
 
-                        <div class="form-group">
-                            <label class="control-label">Your E-Mail Address</label>
-                            <div>
-                                <input type="email" class="form-control input-lg" value="" placeholder="Enter your email" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label">Subject</label>
-                            <div>
-                                <input type="text" class="form-control input-lg" placeholder="Enter subject" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label">Message</label>
-                            <div>
-                                <textarea rows="5" class="form-control input-lg" placeholder="Enter your message" required></textarea>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-success">Send</button>
-                    </form>
-                </div>
+            <hr>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-    <div class="row p-5 contact text-center">
-        <div class="col-md-4 py-3 bg-img">
-            <h3 class="navbar-brand">Ostrava</h3>
-            <p class="m-0">17.listopadu 2172/15</p>
-            <p class="m-0">708 00 Ostrava</p>
-            <p class="m-0">+420 777 777 777</p>
-        </div>
-        <div class="col-md-4 py-3 bg-img">
-            <h3 class="navbar-brand">Brno</h3>
-            <p class="m-0">17.listopadu 2172/15</p>
-            <p class="m-0">708 00 Brno</p>
-            <p class="m-0">+420 777 777 777</p>
-        </div>
-        <div class="col-md-4 py-3 bg-img">
-            <h3 class="navbar-brand">Prague</h3>
-            <p class="m-0">17.listopadu 2172/15</p>
-            <p class="m-0">708 00 Prague</p>
-            <p class="m-0">+420 777 777 777</p>
-        </div>
-    </div>
-
 
 
 
@@ -275,6 +228,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
 <script>
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});
+    article_detail();
 </script>
 
 </body>

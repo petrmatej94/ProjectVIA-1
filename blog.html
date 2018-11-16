@@ -7,17 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-    <link rel="stylesheet" type="text/css" href="gallery_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/gallery_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/posts_styles.css">
+
+    <script type="text/javascript" src="scripts/blogs.js"></script>
 
 
     <title>Hello, world!</title>
 </head>
 
 
-<body>
+<body onload="add_articles()">
 <div class="container main-container">
 
     <nav class="navbar navbar-expand-sm nav-scroller navbar-toggleable  navbar-light px-5 py-2">
@@ -63,7 +66,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="display-4 font-weight-bold">Articles written by</h1>
-                    <h2 class="text-white font-weight-normal">our customers</h2>
+                    <h2 class="text-white font-weight-normal">our experience</h2>
                 </div>
             </div>
         </div>
@@ -72,71 +75,54 @@
 
 
 
-    <div class="row body-main">
+
+
+    <div class="row body-main pr-3">
 
         <!--Main body with posts-->
-        <div class="col-md-9 posts-body">
+        <div class="col-md-9 posts-body" id="posts-body">
 
-            <div class="post-body">
-                <h3>Post title</h3>
-                <ul>
-                    <li>Date: 1.11.2018</li>
-                    <li>Author: Petr Matej</li>
-                    <li>Tags: #Tag, #Tag2</li>
-                    <li>Comments: 10</li>
-                </ul>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
-                        Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
-                </div>
-            </div>
+            <!--<div class="post-body">-->
+            <!--<h3 class="navbar-brand">Post title</h3>-->
+            <!--<ul class="text-muted">-->
+            <!--<li><i class="fa fa-clock prefix grey-text mr-2"></i>Date: 1.11.2018</li>-->
+            <!--<li><i class="fa fa-user prefix grey-text mr-2"></i>Author: Petr Matej</li>-->
+            <!--<li><i class="fa fa-tag prefix grey-text mr-2"></i>Tags: #Tag, #Tag2</li>-->
+            <!--<li><i class="fa fa-pen prefix grey-text mr-2"></i>Comments: 10</li>-->
+            <!--</ul>-->
+            <!--<div class="mb-3">-->
+            <!--<img src="images/sea.jpg" class="img-fluid">-->
+            <!--</div>-->
 
-            <div class="post-body">
-                <h3>Post title</h3>
-                <ul>
-                    <li>Date: 1.11.2018</li>
-                    <li>Author: Petr Matej</li>
-                    <li>Tags: #Tag, #Tag2</li>
-                    <li>Comments: 10</li>
-                </ul>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
-                        Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
-                </div>
-            </div>
+            <!--&lt;!&ndash;<div class="embed-responsive embed-responsive-16by9">&ndash;&gt;-->
+            <!--&lt;!&ndash;<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--<div class="description mb-2">-->
+            <!--<p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.-->
+            <!--Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>-->
+            <!--</div>-->
 
-            <div class="post-body">
-                <h3>Post title</h3>
-                <ul>
-                    <li>Date: 1.11.2018</li>
-                    <li>Author: Petr Matej</li>
-                    <li>Tags: #Tag, #Tag2</li>
-                    <li>Comments: 10</li>
-                </ul>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
-                        Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
-                </div>
-            </div>
+            <!--<a href="#"><button type="button" class="btn btn-warning">Continue Reading...</button></a>-->
+
+            <!--<hr>-->
+            <!--</div>-->
         </div>
 
+
+
         <!--Box on the right side with widgets-->
-        <div class="col-md-3 right-box">
-            <div class="search-field">
-                <input type="text" placeholder="Search..">
-                <button>Search</button>
+        <div class="col-md-3 right-box pt-5">
+
+            <div class="input-group mt-3">
+                <input class="form-control border-secondary py-2" type="search" value="" placeholder="Search...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
             </div>
 
-            <div class="blog-categories">
+            <div class="blog-categories mt-5">
                 <h4>Blog Categories</h4>
                 <ul>
                     <li><a href="">Branding</a></li>
@@ -148,97 +134,79 @@
                 </ul>
             </div>
 
-            <div class="text-widget">
-                <h4>Text Widget</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet magna in magna gravida vehicula.
-                    Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
-            </div>
-
-            <div class="recent-posts">
+            <div class="mt-5">
                 <h4>Recent posts</h4>
-                <p>3 posts will be there</p>
+                <div class="recent-posts" id="recent-posts">
+                    <!--<div class="row rec-post">-->
+                    <!--<div class="col-md-5">-->
+                    <!--<img class="img-fluid mx-auto" src="images/sea.jpg">-->
+                    <!--</div>-->
+                    <!--<div class="col-md-7 m-0 p-0">-->
+                    <!--<a href="#"><strong>Heading - Heading Heading</strong></a>-->
+                    <!--<p><small>Date</small></p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
             </div>
 
-            <div class="tabs">
-                <h4>Tabs Widget</h4>
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Recent</a></li>
-                    <li><a href="">Popular</a></li>
-                </ul>
-            </div>
 
-            <div class="accordion-widget">
+            <div class="accordion mt-5" id="accordion">
                 <h4>Accordion Widget</h4>
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                    Website Design</a>
-                            </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse in">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
-                        </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Website Design
+                            </button>
+                        </h5>
                     </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                    Website Development</a>
-                            </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body px-4 py-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
                         </div>
                     </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                    Content Management Systems</a>
-                            </h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed p-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Website Development
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body px-4 py-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat
                         </div>
                     </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                    E-Commerce</a>
-                            </h4>
-                        </div>
-                        <div id="collapse4" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed p-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Content Management Systems
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body px-4 py-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="latest-tweets">
-                <h4>Recent posts</h4>
-            </div>
 
-            <div class="flick-feed">
-                <h4>Flicker Feed</h4>
-            </div>
 
         </div>
     </div>
@@ -371,7 +339,6 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script type="text/javascript" src="scripts/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
 <script>
     baguetteBox.run('.compact-gallery',{animation:'slideIn'});

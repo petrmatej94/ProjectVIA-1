@@ -7,12 +7,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="gallery_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/gallery_styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
 
-    <title>Hello, world!</title>
+    <title>Gallery</title>
 </head>
 
 
@@ -70,71 +70,229 @@
 
 
 
-    <section class="gallery-block compact-gallery">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="images/sunset.jpg">
-                        <img class="img-fluid image" src="images/sunset.jpg">
-                        <span class="description">
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <section class="gallery-block compact-gallery">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/sunset.jpg">
+                                    <img class="img-fluid image" src="images/sunset.jpg">
+                                    <span class="description">
                             <span class="description-heading">Sunset</span>
                             <span class="description-body">This is Sunset</span>
                         </span>
-                    </a>
-                </div>
+                                </a>
+                            </div>
 
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="images/field.jpg">
-                        <img class="img-fluid image" src="images/field.jpg">
-                        <span class="description">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/field.jpg">
+                                    <img class="img-fluid image" src="images/field.jpg">
+                                    <span class="description">
                             <span class="description-heading">Field</span>
                             <span class="description-body">This is Field</span>
                         </span>
-                    </a>
-                </div>
+                                </a>
+                            </div>
 
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="images/wave.jpg">
-                        <img class="img-fluid image" src="images/wave.jpg">
-                        <span class="description">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/wave.jpg">
+                                    <img class="img-fluid image" src="images/wave.jpg">
+                                    <span class="description">
                             <span class="description-heading">Wave</span>
                             <span class="description-body">This is Wave</span>
                         </span>
-                    </a>
-                </div>
+                                </a>
+                            </div>
 
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="images/alps2.jpg">
-                        <img class="img-fluid image" src="images/alps2.jpg">
-                        <span class="description">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/alps2.jpg">
+                                    <img class="img-fluid image" src="images/alps2.jpg">
+                                    <span class="description">
                             <span class="description-heading">Alps</span>
                             <span class="description-body">These are Alps</span>
                         </span>
-                    </a>
-                </div>
+                                </a>
+                            </div>
 
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="images/sunset2.jpg">
-                        <img class="img-fluid image" src="images/sunset2.jpg">
-                        <span class="description">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/sunset2.jpg">
+                                    <img class="img-fluid image" src="images/sunset2.jpg">
+                                    <span class="description">
                             <span class="description-heading">Resort</span>
                             <span class="description-body">This is Resort</span>
                         </span>
-                    </a>
-                </div>
+                                </a>
+                            </div>
 
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="images/alps.jpg">
-                        <img class="img-fluid image" src="images/alps.jpg">
-                        <span class="description">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/alps.jpg">
+                                    <img class="img-fluid image" src="images/alps.jpg">
+                                    <span class="description">
                             <span class="description-heading">Alps</span>
                             <span class="description-body">These are Alps</span>
                         </span>
-                    </a>
-                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section class="gallery-block compact-gallery">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/wave.jpg">
+                                    <img class="img-fluid image" src="images/wave.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Sunset</span>
+                            <span class="description-body">This is Sunset</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/alps2.jpg">
+                                    <img class="img-fluid image" src="images/alps2.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Field</span>
+                            <span class="description-body">This is Field</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/wave.jpg">
+                                    <img class="img-fluid image" src="images/wave.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Wave</span>
+                            <span class="description-body">This is Wave</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/alps2.jpg">
+                                    <img class="img-fluid image" src="images/alps2.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Alps</span>
+                            <span class="description-body">These are Alps</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/wave.jpg">
+                                    <img class="img-fluid image" src="images/wave.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Resort</span>
+                            <span class="description-body">This is Resort</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/alps2.jpg">
+                                    <img class="img-fluid image" src="images/alps2.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Alps</span>
+                            <span class="description-body">These are Alps</span>
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section class="gallery-block compact-gallery">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/sunset2.jpg">
+                                    <img class="img-fluid image" src="images/sunset2.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Sunset</span>
+                            <span class="description-body">This is Sunset</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/alps2.jpg">
+                                    <img class="img-fluid image" src="images/alps2.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Field</span>
+                            <span class="description-body">This is Field</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/sunset2.jpg">
+                                    <img class="img-fluid image" src="images/sunset2.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Wave</span>
+                            <span class="description-body">This is Wave</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/field.jpg">
+                                    <img class="img-fluid image" src="images/field.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Alps</span>
+                            <span class="description-body">These are Alps</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/sunset2.jpg">
+                                    <img class="img-fluid image" src="images/sunset2.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Resort</span>
+                            <span class="description-body">This is Resort</span>
+                        </span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                <a class="lightbox" href="images/sunset.jpg">
+                                    <img class="img-fluid image" src="images/sunset.jpg">
+                                    <span class="description">
+                            <span class="description-heading">Alps</span>
+                            <span class="description-body">These are Alps</span>
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="fa fa-angle-left fa-5x" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="fa fa-angle-right fa-5x" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
 
 
 
@@ -287,7 +445,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="scripts/main.js"></script>
 <script src="scripts/my-gallery.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>

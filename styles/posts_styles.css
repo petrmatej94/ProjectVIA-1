@@ -1,0 +1,58 @@
+.posts-body {
+    padding: 0 50px 50px 50px;
+}
+
+.post-body {
+    margin-bottom: 50px;
+}
+
+.posts-body ul {
+    list-style-type: none;
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.posts-body li {
+    float: left;
+    margin-right: 70px
+}
+
+.post-body img {
+    width: 100%;
+    max-height: 10%;
+}
+
+.posts-body button {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+.rec-post {
+}
+.recent-posts a {
+    color: black;
+    font-size: 10px;
+}
+.recent-posts p {
+    color: gray;
+    font-size: 12px;
+}
+
+
+.accordion .card, button {
+    cursor: pointer;
+    color: black;
+    overflow: hidden;
+}
+.accordion .btn-link {
+    color: black;
+    text-decoration: none;
+    border: none;
+    float: left;
+    text-align: left;
+    width: 100%;
+}

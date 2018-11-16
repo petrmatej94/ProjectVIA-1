@@ -76,10 +76,16 @@
 
 
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    outline: black;
+    background-color: black;
+}
 
 
-
-
+.fa-angle-right, .fa-angle-left{
+    color: black;
+}
 
 
 
